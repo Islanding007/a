@@ -10,7 +10,7 @@ import pandas as pd
 import pickle
 
 # Load your pre-trained model
-with open("D:/project/model (1).pkl", "rb") as file:
+with open("model (1).pkl", "rb") as file:
     model = pickle.load(file)
 # Sample data (replace with actual data if needed)
 data = pd.DataFrame({
