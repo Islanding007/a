@@ -10,8 +10,8 @@ import pandas as pd
 import pickle
 
 # Load your pre-trained model
-import joblib
-model = joblib.load("D:/project/my_model.pkl") 
+with open("D:/project/my_model.pkl", "rb") as file:
+    model = pickle.load(file)
 # Sample data (replace with actual data if needed)
 data = pd.DataFrame({
     "year": [2014, 2014],
